@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html Lang="En">
+<head>
+  <Meta Charset="Utf-8" />
+  <Meta Name="Viewport" Content="Width=Device-Width, Initial-Scale=1.0"/>
+  <Title>Shoaib Ali | Software Developer</Title>
+  <Style>
+    :Root {
+      --Primary: #005792;
+      --Secondary: #00c2cb;
+      --Bg-Light: #f9f9f9;
+      --Text-Dark: #1e1e1e;
+      --Text-Light: #ffffff;
+      --Accent: #ffbd59;
+      --Bg-Dark: #1e1e1e;
+      --Text-White: #ffffff;
+      --Box-Dark: #2c2c2c;
+    }
+
+    Body {
+      Font-Family: 'Segoe Ui', Sans-Serif;
+      Background-Color: Var(--Bg-Light);
+      Color: Var(--Text-Dark);
+      Line-Height: 1.6;
+      Transition: Background 0.3s, Color 0.3s;
+    }
+
+    Body.Dark {
+      Background-Color: Var(--Bg-Dark);
+      Color: Var(--Text-White);
+    }
+
+    A {
+      Color: Var(--Primary);
+      Text-Decoration: None;
+    }
+
+    Header {
+      Background: Linear-Gradient(135deg, Var(--Primary), Var(--Secondary));
+      Color: Var(--Text-Light);
+      Text-Align: Center;
+      Padding: 60px 20px 40px;
+      Position: Relative;
+    }
+
+    Header Img {
+      Width: 140px;
+      Height: 140px;
+      Border-Radius: 50%;
+      Border: 4px Solid Var(--Accent);
+      Box-Shadow: 0 4px 8px Rgba(0,0,0,0.3);
+      Margin-Bottom: 15px;
+      Object-Fit: Cover;
+    }
+
+    H1 {
+      Font-Size: 2.5rem;
+      Margin-Bottom: 10px;
+    }
+
+    .Subtitle {
+      Font-Size: 1.2rem;
+      Color: Var(--Accent);
+    }
+
+    .Container {
+      Max-Width: 1000px;
+      Margin: Auto;
+      Padding: 40px 20px;
+    }
+
+    Section {
+      Margin-Bottom: 40px;
+      Background-Color: White;
+      Border-Radius: 10px;
+      Padding: 30px;
+      Box-Shadow: 0 4px 12px Rgba(0,0,0,0.05);
+      Transition: Background 0.3s, Color 0.3s;
+    }
+
+    Body.Dark Section {
+      Background-Color: Var(--Box-Dark);
+      Color: Var(--Text-White);
+    }
+
+    H2 {
+      Color: Var(--Primary);
+      Margin-Bottom: 20px;
+      Font-Size: 1.8rem;
+      Border-Bottom: 2px Solid Var(--Accent);
+      Display: Inline-Block;
+      Padding-Bottom: 5px;
+    }
+
+    Ul {
+      Margin-Left: 20px;
+    }
+
+    .Social-Links A {
+      Margin: 0 10px;
+      Font-Weight: Bold;
+      Color: Var(--Text-Light);
+      Background: Var(--Accent);
+      Padding: 6px 12px;
+      Border-Radius: 5px;
+    }
+
+    .Social-Links A:Hover {
+      Background-Color: Var(--Text-Light);
+      Color: Var(--Primary);
+      Transition: 0.3s;
+    }
+
+    Input, Textarea {
+      Width: 100%;
+      Padding: 12px;
+      Font-Size: 1rem;
+      Margin-Bottom: 12px;
+      Border: 1px Solid #ccc;
+      Border-Radius: 6px;
+    }
+
+    Button {
+      Background-Color: Var(--Primary);
+      Color: White;
+      Padding: 12px 20px;
+      Font-Size: 1rem;
+      Border: None;
+      Border-Radius: 6px;
+      Cursor: Pointer;
+      Transition: 0.3s;
+    }
+
+    Button:Hover {
+      Background-Color: Var(--Secondary);
+    }
+
+    Footer {
+      Background-Color: Var(--Primary);
+      Color: Var(--Text-Light);
+      Text-Align: Center;
+      Padding: 15px 0;
+    }
+
+    .Dark-Toggle {
+      Position: Absolute;
+      Top: 20px;
+      Right: 20px;
+      Background: Var(--Accent);
+      Color: Black;
+      Padding: 8px 12px;
+      Font-Size: 0.9rem;
+      Border: None;
+      Border-Radius: 5px;
+      Cursor: Pointer;
+    }
+
+    @Media (Max-Width: 600px) {
+      Header H1 {
+        Font-Size: 1.8rem;
+      }
+
+      .Container {
+        Padding: 20px;
+      }
+
+      Section {
+        Padding: 20px;
+      }
+    }
+  </Style>
+</Head>
+<Body>
+
+  <Header>
+    <Button Class="Dark-Toggle" Onclick="ToggleDarkMode()">🌙 Dark Mode</Button>
+    <Img Src="Profile.jpg" Alt="Shoaib Ali" />
+    <H1>Shoaib Ali</H1>
+    <P Class="Subtitle">Software Developer | Java | Python | Spring Boot | Web Development</P>
+    <Div Class="Social-Links" Style="Margin-Top: 15px;">
+      <A Href="https://github.com/shoaibalichhajro" Target="_Blank">Github</A>
+      <A Href="https://www.linkedin.com/in/shoaib-ali-470b602b5" Target="_Blank">Linkedin</A>
+    </Div>
+  </Header>
+
+  <Div Class="Container">
+
+    <Section>
+      <H2>About Me</H2>
+      <P>
+        Hello! I'm Shoaib Ali, A Dedicated Java Developer With A Strong Foundation In Object-Oriented Programming And Backend Development. My Expertise Includes Working With Frameworks Like Spring And Hibernate, Database Management, And Restful Api Integration. I Thrive In Collaborative Environments, Where I Leverage My Technical Skills To Deliver Scalable And Efficient Solutions.
+
+        In Addition To My Development Experience, I Am Passionate About Education And Have Served As A Teaching Specialist, Fostering Interactive And Inclusive Learning Environments. My Innovative Approaches, Such As Peer-Tutoring Programs, Have Significantly Enhanced Student Performance.
+
+        Currently Pursuing A Bachelor’s In It At Smi University Karachi, I Am Committed To Continuous Learning And Staying Updated With Emerging Technologies. My Goal Is To Contribute My Creativity, Problem-Solving Abilities, And Technical Proficiency To Impactful Projects While Growing As A Professional In The Tech Industry.
+      </P>
+    </Section>
+
+    <Section>
+      <H2>Technical Skills</H2>
+      <Ul>
+        <Li>Languages: Java, Python, Javascript</Li>
+        <Li>Web: Html, Css, Javascript, Spring Boot</Li>
+        <Li>Databases: Mysql, Postgresql</Li>
+        <Li>Concepts: Oop, Dsa, Dbms</Li>
+        <Li>Tools: Microsoft Word, Excel, Powerpoint</Li>
+      </Ul>
+    </Section>
+
+    <Section>
+      <H2>Experience</H2>
+      <H3>Java Developer – Techno Hacks Solutions Pvt. Ltd.</H3>
+      <P>
+        Developed And Maintained Java And Python-Based Applications, Focusing On Optimizing Performance And Functionality. Collaborated With Cross-Functional Teams To Troubleshoot Issues, Implement New Features, And Improve Overall Code Quality.
+      </P>
+    </Section>
+
+    <Section>
+      <H2>Education</H2>
+      <H3>Smiu, Karachi</H3>
+      <P>Bachelor Of It In Computer Science</P>
+    </Section>
+
+    <Section>
+      <H2>Projects</H2>
+      <Ul>
+        <Li><Strong>Student Management System:</Strong> Java + Mysql Crud Desktop Application</Li>
+        <Li><Strong>Task Management App:</Strong> Python-Based To-Do Tracker With File Storage</Li>
+        <Li><Strong>Online Voting System:</Strong> Spring Boot + Postgresql Voting Portal With Admin Panel</Li>
+      </Ul>
+    </Section>
+
+    <Section>
+      <H2>Soft Skills</H2>
+      <Ul>
+        <Li>Presentation & Documentation</Li>
+        <Li>Team Collaboration</Li>
+        <Li>Problem-Solving</Li>
+        <Li>Client Communication</Li>
+        <Li>Active Listening</Li>
+      </Ul>
+    </Section>
+
+    <Section>
+      <H2>Contact Me</H2>
+      <P><Strong>Email:</Strong> <A Href="Mailto:shoaibalichhajro10@gmail.com">Shoaibalichhajro10@gmail.Com</A></P>
+      <P><Strong>Phone:</Strong> 03702593414</P>
+      <P><Strong>Location:</Strong> Karachi, Pakistan</P>
+
+      <Form Action="https://formspree.io/f/mnqegnbp" Method="Post">
+        <Input Type="Text" Name="Name" Placeholder="Your Name" Required />
+        <Input Type="Email" Name="Email" Placeholder="Your Email" Required />
+        <Textarea Name="Message" Rows="5" Placeholder="Your Message" Required></Textarea>
+        <Button Type="Submit">Send Message</Button>
+      </Form>
+    </Section>
+  </Div>
+
+  <Footer>
+    <P>© 2025 Shoaib Ali. All Rights Reserved.</P>
+  </Footer>
+
+  <Script>
+    Function ToggleDarkMode() {
+      Const Body = Document.Body;
+      Body.ClassList.Toggle("Dark");
+      LocalStorage.SetItem("Dark-Mode", Body.ClassList.Contains("Dark"));
+    }
+
+    Window.AddEventListener("DOMContentLoaded", () => {
+      Const DarkMode = LocalStorage.GetItem("Dark-Mode") === "True";
+      If (DarkMode) Document.Body.ClassList.Add("Dark");
+    });
+  </Script>
+
+</Body>
+</Html>
